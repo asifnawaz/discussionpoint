@@ -33,6 +33,8 @@
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @else
+                    <a href="/"
+                           class="no-underline hover:underline">Dashboard</a>
                     <a href="{{ route('show', Auth::user()) }}"
                            class="no-underline hover:underline">{{ Auth::user()->name }}</a>
                         <a href="{{ route('edit') }}"
